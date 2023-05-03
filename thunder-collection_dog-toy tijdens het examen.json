@@ -9,7 +9,7 @@
             "_id": "8cff4e32-ea98-4917-9a83-9fc4a8d41aad",
             "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
             "containerId": "",
-            "name": "addDog",
+            "name": "add Dog",
             "url": "http://localhost:8080/api/dog/add",
             "method": "POST",
             "sortNum": 5000,
@@ -17,37 +17,14 @@
             "modified": "2023-05-02T18:37:52.009Z",
             "headers": [],
             "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{ \"name\":\"Tommie\"\n}",
-                "form": []
-            },
-            "tests": []
-        },
-        {
-            "_id": "1aa1bad8-13f4-4f87-9cf3-62301847f9d6",
-            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
-            "containerId": "",
-            "name": "addDog invalid empty name",
-            "url": "http://localhost:8080/api/dog/add",
-            "method": "POST",
-            "sortNum": 6250,
-            "created": "2023-05-02T18:38:28.767Z",
-            "modified": "2023-05-02T18:38:54.914Z",
-            "headers": [],
-            "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{\n}",
-                "form": []
-            },
+            "body": {},
             "tests": []
         },
         {
             "_id": "01f7b29c-fcb8-44f8-a807-ebc21fa82686",
             "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
             "containerId": "",
-            "name": "addToy",
+            "name": "add Toy",
             "url": "http://localhost:8080/api/toy/add",
             "method": "POST",
             "sortNum": 7500,
@@ -55,96 +32,35 @@
             "modified": "2023-05-02T18:43:06.482Z",
             "headers": [],
             "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{ \"name\":\"Sugar\"\n}",
-                "form": []
-            },
-            "tests": []
-        },
-        {
-            "_id": "2e74b71d-6e6a-47cd-b04f-5f4380a8db1b",
-            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
-            "containerId": "",
-            "name": "addToy invalid long name",
-            "url": "http://localhost:8080/api/toy/add",
-            "method": "POST",
-            "sortNum": 8750,
-            "created": "2023-05-02T18:38:58.710Z",
-            "modified": "2023-05-02T18:43:11.550Z",
-            "headers": [],
-            "params": [],
-            "body": {
-                "type": "json",
-                "raw": "{ \"name\":\"123456789\"\n}",
-                "form": []
-            },
+            "body": {},
             "tests": []
         },
         {
             "_id": "7ca601b4-56f7-4c87-89a7-2c897ff42124",
             "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
             "containerId": "",
-            "name": "sort dog on name valid case",
-            "url": "http://localhost:8080/dog/sort?order=DESC",
+            "name": "sort dog on name",
+            "url": "http://localhost:8080/dog/sort",
             "method": "GET",
             "sortNum": 9687.5,
             "created": "2023-05-02T18:40:20.126Z",
             "modified": "2023-05-02T18:40:20.126Z",
             "headers": [],
-            "params": [
-                {
-                    "name": "order",
-                    "value": "DESC",
-                    "isPath": false
-                },
-                {
-                    "name": "order",
-                    "value": "ASC",
-                    "isDisabled": true,
-                    "isPath": false
-                }
-            ],
-            "tests": []
-        },
-        {
-            "_id": "e7e3b2df-79b7-485e-9882-e03bbc97c2b7",
-            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
-            "containerId": "",
-            "name": "sort dog on name invalid case",
-            "url": "http://localhost:8080/dog/sort?order=ABC",
-            "method": "GET",
-            "sortNum": 9843.8,
-            "created": "2023-05-02T18:39:45.401Z",
-            "modified": "2023-05-02T18:43:28.154Z",
-            "headers": [],
-            "params": [
-                {
-                    "name": "order",
-                    "value": "ABC",
-                    "isPath": false
-                }
-            ],
+            "params": [],
             "tests": []
         },
         {
             "_id": "db4eba19-3290-419c-b18d-af12a7678307",
             "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
             "containerId": "",
-            "name": "addToyToDog valid case",
+            "name": "addToyToDog",
             "url": "http://localhost:8080/dog/{id}/addToy",
             "method": "POST",
             "sortNum": 10000,
             "created": "2023-05-02T18:37:52.011Z",
             "modified": "2023-05-02T18:41:30.159Z",
             "headers": [],
-            "params": [
-                {
-                    "name": "id",
-                    "value": "1",
-                    "isPath": true
-                }
-            ],
+            "params": [],
             "tests": []
         }
     ]
