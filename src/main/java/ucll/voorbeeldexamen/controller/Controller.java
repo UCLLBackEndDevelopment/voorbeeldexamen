@@ -3,7 +3,6 @@ package ucll.voorbeeldexamen.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import jakarta.validation.Valid;
 import ucll.voorbeeldexamen.model.Dog;
 import ucll.voorbeeldexamen.model.Toy;
 import ucll.voorbeeldexamen.service.DogService;
@@ -20,12 +19,12 @@ public class Controller {
     private ToyService toyService;
 
     @PostMapping("dog/add")
-    public Dog addDog(@RequestBody @Valid Dog dog) {
+    public Dog addDog(@RequestBody Dog dog) {
         return dogService.addDog(dog);
     }
 
     @PostMapping("toy/add")
-    public Toy addToy(@RequestBody @Valid Toy toy) {
+    public Toy addToy(@RequestBody Toy toy) {
         return toyService.addToy(toy);
     }
 

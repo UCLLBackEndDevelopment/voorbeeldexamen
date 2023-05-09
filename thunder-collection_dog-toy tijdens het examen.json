@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "dog-toy tijdens het examen",
-    "dateExported": "2023-05-02T18:43:40.722Z",
+    "dateExported": "2023-05-09T15:33:18.498Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -9,58 +9,304 @@
             "_id": "8cff4e32-ea98-4917-9a83-9fc4a8d41aad",
             "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
             "containerId": "",
-            "name": "add Dog",
+            "name": "add Dog Albert",
             "url": "http://localhost:8080/api/dog/add",
             "method": "POST",
             "sortNum": 5000,
             "created": "2023-05-02T18:37:52.009Z",
-            "modified": "2023-05-02T18:37:52.009Z",
+            "modified": "2023-05-09T11:58:43.928Z",
             "headers": [],
             "params": [],
-            "body": {},
+            "body": {
+                "type": "json",
+                "raw": "{ \"name\":\"Albert\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "60ae4a3c-1f19-4b19-82cf-af03b775bccf",
+            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
+            "containerId": "",
+            "name": "add Dog Tommie",
+            "url": "http://localhost:8080/api/dog/add",
+            "method": "POST",
+            "sortNum": 5625,
+            "created": "2023-05-09T12:27:29.726Z",
+            "modified": "2023-05-09T12:27:49.273Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \"name\":\"Tommie\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1aa1bad8-13f4-4f87-9cf3-62301847f9d6",
+            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
+            "containerId": "",
+            "name": "addDog invalid long name",
+            "url": "http://localhost:8080/api/dog/add",
+            "method": "POST",
+            "sortNum": 6250,
+            "created": "2023-05-02T18:38:28.767Z",
+            "modified": "2023-05-09T12:06:18.015Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \"name\":\"123456789\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "40692458-7c46-4287-b6f9-303edd2c9bcf",
+            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
+            "containerId": "",
+            "name": "addDog invalid to short name",
+            "url": "http://localhost:8080/api/dog/add",
+            "method": "POST",
+            "sortNum": 6875,
+            "created": "2023-05-09T12:05:48.829Z",
+            "modified": "2023-05-09T12:06:30.587Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \"name\":\"a\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5044bd99-3d03-4666-9cfa-0254a3c96c89",
+            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
+            "containerId": "",
+            "name": "add Dog invalid Tommie again",
+            "url": "http://localhost:8080/api/dog/add",
+            "method": "POST",
+            "sortNum": 7187.5,
+            "created": "2023-05-09T15:27:03.086Z",
+            "modified": "2023-05-09T15:27:23.073Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \"name\":\"Tommie\"\n}",
+                "form": []
+            },
             "tests": []
         },
         {
             "_id": "01f7b29c-fcb8-44f8-a807-ebc21fa82686",
             "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
             "containerId": "",
-            "name": "add Toy",
+            "name": "add Toy Ball",
             "url": "http://localhost:8080/api/toy/add",
             "method": "POST",
             "sortNum": 7500,
             "created": "2023-05-02T18:37:52.010Z",
-            "modified": "2023-05-02T18:43:06.482Z",
+            "modified": "2023-05-09T12:37:15.930Z",
             "headers": [],
             "params": [],
-            "body": {},
+            "body": {
+                "type": "json",
+                "raw": "{ \"name\":\"Ball\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "15d82a46-78b2-4b96-b275-3739a641e586",
+            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
+            "containerId": "",
+            "name": "add Toy Bone",
+            "url": "http://localhost:8080/api/toy/add",
+            "method": "POST",
+            "sortNum": 8125,
+            "created": "2023-05-09T12:36:55.876Z",
+            "modified": "2023-05-09T12:37:28.256Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{ \"name\":\"Bone\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "2e74b71d-6e6a-47cd-b04f-5f4380a8db1b",
+            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
+            "containerId": "",
+            "name": "update Toy change Ball to Doll",
+            "url": "http://localhost:8080/api/toy/{toyId}",
+            "method": "PUT",
+            "sortNum": 8750,
+            "created": "2023-05-02T18:38:58.710Z",
+            "modified": "2023-05-09T12:37:54.514Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "toyId",
+                    "value": "1",
+                    "isPath": true
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{ \"name\":\"Doll\"\n}",
+                "form": []
+            },
             "tests": []
         },
         {
             "_id": "7ca601b4-56f7-4c87-89a7-2c897ff42124",
             "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
             "containerId": "",
-            "name": "sort dog on name",
-            "url": "http://localhost:8080/dog/sort",
+            "name": "sort dog on name valid case",
+            "url": "http://localhost:8080/dog/sort?order=DESC",
             "method": "GET",
             "sortNum": 9687.5,
             "created": "2023-05-02T18:40:20.126Z",
             "modified": "2023-05-02T18:40:20.126Z",
             "headers": [],
-            "params": [],
+            "params": [
+                {
+                    "name": "order",
+                    "value": "DESC",
+                    "isPath": false
+                },
+                {
+                    "name": "order",
+                    "value": "ASC",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "e7e3b2df-79b7-485e-9882-e03bbc97c2b7",
+            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
+            "containerId": "",
+            "name": "sort dog on name invalid case",
+            "url": "http://localhost:8080/dog/sort?order=ABC",
+            "method": "GET",
+            "sortNum": 9843.8,
+            "created": "2023-05-02T18:39:45.401Z",
+            "modified": "2023-05-02T18:43:28.154Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "order",
+                    "value": "ABC",
+                    "isPath": false
+                }
+            ],
             "tests": []
         },
         {
             "_id": "db4eba19-3290-419c-b18d-af12a7678307",
             "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
             "containerId": "",
-            "name": "addToyToDog",
-            "url": "http://localhost:8080/dog/{id}/addToy",
+            "name": "add Toy with id 1  To Dog Albert",
+            "url": "http://localhost:8080/dog/{dogId}/addToy?toyId=1",
             "method": "POST",
             "sortNum": 10000,
             "created": "2023-05-02T18:37:52.011Z",
-            "modified": "2023-05-02T18:41:30.159Z",
+            "modified": "2023-05-09T15:31:24.673Z",
             "headers": [],
-            "params": [],
+            "params": [
+                {
+                    "name": "dogId",
+                    "value": "1",
+                    "isPath": true
+                },
+                {
+                    "name": "toyId",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "2143c2a0-3f0e-4cdd-8379-083b00d1084c",
+            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
+            "containerId": "",
+            "name": "add Toy with id 2 To Dog Albert",
+            "url": "http://localhost:8080/dog/{dogId}/addToy?toyId=2",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-05-09T12:23:48.584Z",
+            "modified": "2023-05-09T15:31:58.639Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "dogId",
+                    "value": "1",
+                    "isPath": true
+                },
+                {
+                    "name": "toyId",
+                    "value": "2",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "c3484924-f3ca-4855-880a-6b2369b712c8",
+            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
+            "containerId": "",
+            "name": "add Toy with id 1 To Dog Tommie",
+            "url": "http://localhost:8080/dog/{dogId}/addToy?toyId=1",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-05-09T12:27:00.292Z",
+            "modified": "2023-05-09T15:32:19.080Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "dogId",
+                    "value": "2",
+                    "isPath": true
+                },
+                {
+                    "name": "toyId",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "b8511b5a-9043-49a9-a3d4-bd15fc3bb0fa",
+            "colId": "daac00ce-799e-43a1-a6de-86b95dd4c51f",
+            "containerId": "",
+            "name": "add Toy with id 1  again To Dog Albert invalid case",
+            "url": "http://localhost:8080/dog/{dogId}/addToy?toyId=1",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-05-09T12:41:03.801Z",
+            "modified": "2023-05-09T15:32:44.679Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "dogId",
+                    "value": "1",
+                    "isPath": true
+                },
+                {
+                    "name": "toyId",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
             "tests": []
         }
     ]

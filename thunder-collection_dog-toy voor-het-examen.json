@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "dog-toy voor-het-examen",
-    "dateExported": "2023-05-02T18:48:34.290Z",
+    "dateExported": "2023-05-09T15:33:09.395Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -9,30 +9,38 @@
             "_id": "2557c766-257a-4c9b-a4c0-b658e43c4da5",
             "colId": "a2c7dc28-8571-40e1-9795-af420f1d7d76",
             "containerId": "",
-            "name": "add Dog",
+            "name": "addDog",
             "url": "http://localhost:8080/api/dog/add",
             "method": "POST",
             "sortNum": 5000,
             "created": "2023-05-02T18:37:48.292Z",
-            "modified": "2023-05-02T18:37:48.292Z",
+            "modified": "2023-05-09T11:55:06.391Z",
             "headers": [],
             "params": [],
-            "body": {},
+            "body": {
+                "type": "json",
+                "raw": "{ \"name\":\"Albert\"\n}",
+                "form": []
+            },
             "tests": []
         },
         {
             "_id": "6579b4b3-12a0-4d0a-82ba-4705d63b5455",
             "colId": "a2c7dc28-8571-40e1-9795-af420f1d7d76",
             "containerId": "",
-            "name": "add Toy",
+            "name": "addToy",
             "url": "http://localhost:8080/api/toy/add",
             "method": "POST",
             "sortNum": 7500,
             "created": "2023-05-02T18:37:48.293Z",
-            "modified": "2023-05-02T18:37:48.293Z",
+            "modified": "2023-05-09T11:54:55.579Z",
             "headers": [],
             "params": [],
-            "body": {},
+            "body": {
+                "type": "json",
+                "raw": "{ \"name\":\"Ball\"\n}",
+                "form": []
+            },
             "tests": []
         }
     ]
