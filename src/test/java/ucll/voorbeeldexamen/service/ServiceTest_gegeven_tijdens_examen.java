@@ -44,7 +44,7 @@ public class ServiceTest_gegeven_tijdens_examen {
     }
 
     @Test
-    public void givenTwoBooksInRepo_whenSortIsAscedWithOrderABC_thenServiceExceptionIsThrown() {
+    public void givenTwoDogsInRepo_whenSortIsAskedWithOrderABC_thenServiceExceptionIsThrown() {
 
         // // given
         // lenient().when(dogRepo.findDogsOrderByNameAsc()).thenReturn(listWithDogsAsc);
